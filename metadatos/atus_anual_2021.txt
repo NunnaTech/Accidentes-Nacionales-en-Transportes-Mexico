@@ -1,0 +1,28 @@
+﻿
+identifier: MEX-INEGI.40.302.03-ATUS-1997-2021
+
+title: Estadística de Accidentes de Tránsito Terrestre en Zonas Urbanas y Suburbanas, 1997-2021 información anual, cifras definitivas 2021.
+
+description: La Estadística de Accidentes de Tránsito Terrestre en Zonas Urbanas y Suburbanas (ATUS), tiene el objetivo de generar información anual sobre la siniestralidad del transporte terrestre a nivel nacional, entidad federativa y municipio, mediante el acopio y procesamiento de datos alusivos a los accidentes ocurridos en zonas no federales, contribuyendo con ello a la planeación y organización del transporte. Nota: Para el año 2018,  se incluyen los municipios en donde la fuente informante informó oficialmente a través de un certificado cero el no registro de accidentes viales en su jurisdicción. Nota: Derivado de la aplicación de nuevos criterios de validación aplicados a la serie estadística de accidentes de tránsito, le comento que se actualizaron datos para Día de la serie 1998-2011 y Día de la semana en donde ocurrió el accidente 1997-2015, para el caso del año 2017 se actualizó el tipo de accidente, además, se actualizaron los catálogos de entidad federativa y municipios, por lo que la información tiene el estatus de cifras revisadas. Finalmente, le comento que para el año 2018, se integraron 114 registros adicionales, con los cuales las cifras pasan a un estatus de definitivas. Cobertura geográfica: Estatal y Municipal.
+
+modified: 2022-07-28
+
+publisher: Instituto Nacional de Estadística y Geografía, INEGI
+
+mbox: atencion.usuarios@inegi.org.mx
+
+license: https://www.inegi.org.mx/inegi/terminos.html
+
+dataDictionary: https://www.inegi.org.mx/rnm/index.php/catalog/506/
+
+keyword:  "Accidentes", "Fatal", "No fatal", "Sólo daños", "Víctimas", "Muertos", "Heridos"
+
+contactPoint: Mtro. J. Armando Aguiar Rodríguez, 800 111 4634
+
+temporal: 1997-2021
+
+spatial: Estados Unidos Mexicanos
+
+accrualPeriodicity: Anualmente
+
+distribution: https://www.inegi.org.mx/programas/accidentes/
