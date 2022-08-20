@@ -1,8 +1,6 @@
 ## GET DATA
-atus_anual_2021 <- read_csv("atus_anual_2021.csv")
-View(atus_anual_2021)
-
-## DELETE NA cases and replase for the average if exist...
+atus_anual_2021 <- read_csv(".//conjunto_de_datos//atus_anual_2021.csv")
+#View(atus_anual_2021)
 
 # funtion to delete Na 
 delete_na = function(x){ifelse(is.na(x), mfv(x, na_rm = TRUE), x)}
