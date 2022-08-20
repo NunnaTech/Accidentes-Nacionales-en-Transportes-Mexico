@@ -11,10 +11,21 @@ accidentes_por_tipo = atus_anual_data %>%
                       arrange(desc(total))
 accidentes_por_tipo
 
+
+  
 ggplot(
-data = accidentes_por_tipo, 
-mapping = aes(x = TIPACCID, y = total)
-) + geom_bar(stat='identity') + geom_text(aes(label = total), hjust = 0) + coord_flip() + scale_fill_identity(palette = "Greens") + theme_classic()
+  data = accidentes_por_tipo, 
+  mapping = aes(x = TIPACCID, y = total, fill = TIPACCID)
+) + geom_bar(stat='identity') + 
+  geom_text(aes(label = total), hjust = 0) + 
+  coord_flip() +
+  theme_minimal() +
+  guides(fill = guide_legend(title = "Tipos de accidentes")) + 
+  scale_fill_manual(values = paletteer_d("ggthemes::Hue_Circle")) +
+  labs(title = "Total de acccidentes provocados por cada tipo de accidente (2021)", 
+       x = "Tipo de accidnete", y = "Número total")
+
+
 
 
 # 2 Porcentajes de accidentes con o sin cinturón de seguridad
