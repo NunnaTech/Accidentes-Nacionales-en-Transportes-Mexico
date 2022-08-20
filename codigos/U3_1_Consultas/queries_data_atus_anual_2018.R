@@ -1,9 +1,9 @@
 # ALREADY AVAILABLE
 View(atus_anual_2021)
 
-atus_anual_data = atus_anual_2021
+atus_anual_data = atus_anual_2018
 total_registros = nrow(atus_anual_data)
-anio = "(2021)"
+anio = "(2018)"
 
 # 1 Total de acccidentes provocados por cada tipo de accidente de mayor a menor
 accidentes_por_tipo = atus_anual_data %>% 
