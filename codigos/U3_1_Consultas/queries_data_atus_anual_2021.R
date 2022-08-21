@@ -1,6 +1,3 @@
-# ALREADY AVAILABLE
-View(atus_anual_2021)
-
 atus_anual_data = atus_anual_2021
 total_registros = nrow(atus_anual_data)
 anio = "(2021)"
@@ -12,7 +9,7 @@ accidentes_por_tipo = atus_anual_data %>%
                       arrange(desc(total))
 accidentes_por_tipo
 
-titulo = paste("Total de acccidentes provocados por cada tipo de accidente ", anio)
+titulo = paste("Total de accidentes provocados por cada tipo de accidente ", anio)
 titulo_x = "Tipo de accidente"
 titulo_y = "Número total"
 categorias = "Tipos de accidentes"
@@ -240,3 +237,26 @@ aliento_alcoholico = atus_anual_data %>%
 aliento_alcoholico
 
 "AQUÍ USAMOS MEJOR IMAGENES EN LA PRESENTACIÓN"
+
+
+#15 Los 5 municipio con más de accidente en Morelos
+datos_morelos = atus_anual_data[atus_anual_data$NOM_ENTIDAD=='Morelos', ]
+accidentes_por_municipio = datos_morelos %>% 
+  group_by(NOM_MUNICIPIO) %>% 
+  summarise(total = length(NOM_MUNICIPIO)) %>%
+  arrange(desc(total)) %>%
+  top_n(5)
+
+titulo = paste("Los 5 municipio con más de accidente en Morelos ", anio)
+titulo_x = ""
+titulo_y = "Número total"
+categorias = "Municipio"
+ggplot(data = accidentes_por_municipio, 
+       mapping = aes(x = NOM_MUNICIPIO, y = total, fill = NOM_MUNICIPIO)) + 
+  geom_bar(stat='identity') + 
+  geom_text(aes(label = total), hjust = 0.5, vjust = 0) + 
+  theme_minimal() +
+  guides(fill = guide_legend(title = categorias)) + 
+  labs(title = titulo, x = titulo_x, y = titulo_y) 
+
+View(accidentes_por_municipio)

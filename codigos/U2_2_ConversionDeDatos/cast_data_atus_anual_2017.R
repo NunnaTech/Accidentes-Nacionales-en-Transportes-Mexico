@@ -1,5 +1,5 @@
 # ALREADY AVAILABLE
-View(atus_anual_2017)
+# View(atus_anual_2017)
 
 
 ## LOCATION
@@ -89,4 +89,3 @@ rm(locations)
 rm(minutes)
 rm(municipality)
 rm(states)
-View(atus_anual_2017)

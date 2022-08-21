@@ -1,5 +1,5 @@
 # ALREADY AVAILABLE
-View(atus_anual_2018)
+# View(atus_anual_2018)
 
 
 ## LOCATION
@@ -92,4 +92,3 @@ rm(locations)
 rm(minutes)
 rm(municipality)
 rm(states)
-View(atus_anual_2018)

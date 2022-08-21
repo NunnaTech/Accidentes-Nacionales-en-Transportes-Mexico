@@ -1,5 +1,5 @@
 # ALREADY AVAILABLE
-#View(atus_anual_2021)
+# View(atus_anual_2021)
 
 
 ## LOCATION
@@ -90,4 +90,3 @@ rm(locations)
 rm(minutes)
 rm(municipality)
 rm(states)
-#View(atus_anual_2021)
