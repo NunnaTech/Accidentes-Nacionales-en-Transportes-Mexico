@@ -1,9 +1,9 @@
 # ALREADY AVAILABLE
-View(atus_anual_2021)
+View(atus_anual_2017)
 
-atus_anual_data = atus_anual_2021
+atus_anual_data = atus_anual_2017
 total_registros = nrow(atus_anual_data)
-anio = "(2021)"
+anio = "(2017)"
 
 
 accidentes_por_estado = atus_anual_data %>% 
@@ -15,10 +15,11 @@ agrupamiento = kmeans(accidentes_por_estado$total, 3)
 
 accidentes_por_estado$cluster = agrupamiento$cluster
 
+View(accidentes_por_estado)
 
-accidentes_por_estado$etiqueta[accidentes_por_estado$cluster == 3 ] = "Alto"
-accidentes_por_estado$etiqueta[accidentes_por_estado$cluster == 2 ] = "Bajo"
-accidentes_por_estado$etiqueta[accidentes_por_estado$cluster == 1 ] = "Medio"
+accidentes_por_estado$etiqueta[accidentes_por_estado$cluster == 3 ] = "Bajo"
+accidentes_por_estado$etiqueta[accidentes_por_estado$cluster == 2 ] = "Medio"
+accidentes_por_estado$etiqueta[accidentes_por_estado$cluster == 1 ] = "Alto"
 
 df_mxstate_2020$value = as.factor(accidentes_por_estado$etiqueta)
 mxstate_choropleth(df_mxstate_2020,

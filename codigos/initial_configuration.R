@@ -14,6 +14,12 @@ install.packages("readr")
 install.packages("paletteer")
 install.packages("prismatic")
 install.packages("factoextra")
+install.packages("stringr")
+install.packages("Rtools")
+if (!require("devtools")) {
+  install.packages("devtools")
+}
+devtools::install_github("diegovalle/mxmaps")
 
 library(mice)
 library(readr)
@@ -22,4 +28,6 @@ library(ggplot2)
 library(paletteer)
 library(prismatic)
 library(factoextra)
+library(mxmaps)
+
 
