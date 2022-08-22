@@ -1,6 +1,5 @@
 ## GET DATA
 atus_anual_2018 <- read_csv(".//conjunto_de_datos//atus_anual_2018.csv")
-View(atus_anual_2018)
 
 # funtion to delete Na 
 delete_na = function(x){ifelse(is.na(x), mfv(x, na_rm = TRUE), x)}
@@ -19,4 +18,4 @@ rm(atus_anual_2018_checked)
 rm(values)
 
 # Save on CSV
-write.csv(atus_anual_2018, row.names = FALSE)
+# write.csv(atus_anual_2018, row.names = FALSE)

@@ -1,5 +1,5 @@
 # ALREADY AVAILABLE
-View(atus_anual_2019)
+# View(atus_anual_2019)
 
 
 ## LOCATION
@@ -90,4 +90,5 @@ rm(locations)
 rm(minutes)
 rm(municipality)
 rm(states)
-View(atus_anual_2019)
+
+write.csv(atus_anual_2019, file = ".//conjunto_de_datos//datos_tratados//atus_2019.CSV", fileEncoding = "UTF-8")
