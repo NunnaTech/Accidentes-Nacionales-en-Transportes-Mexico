@@ -24,9 +24,3 @@ df_mxstate_2020$value = as.factor(accidentes_por_estado$etiqueta)
 mxstate_choropleth(df_mxstate_2020,
                    legend = "Clasificacion",
                    title = paste("Accidentes por estado ", anio))
-
-
-
-
-
-

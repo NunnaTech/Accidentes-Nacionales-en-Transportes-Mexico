@@ -20,6 +20,8 @@ if (!require("devtools")) {
   install.packages("devtools")
 }
 devtools::install_github("diegovalle/mxmaps")
+install.packages("compareDF")
+
 
 library(mice)
 library(readr)
@@ -29,5 +31,4 @@ library(paletteer)
 library(prismatic)
 library(factoextra)
 library(mxmaps)
-
-
+library(compareDF)
